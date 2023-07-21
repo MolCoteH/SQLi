@@ -6,6 +6,8 @@ One common scenario is when the application builds SQL queries dynamically with 
 #### GBK (Guojia Biaozhun) is a Chinese character encoding that allows encoding of both Chinese characters as well as ASCII characters.
 The GBK authentication bypass technique exploits the way GBK encoding allows both ASCII and Chinese characters to be present in the same string.
 
+[SQLi_GBK-Encode_Payloads](https://github.com/MolCoteH/SQLi_PayLoads/blob/SQLi/SQLi_GBK-Encode_Payloads.md)
+
 #### Here's how it works:
 
     The application has a login form that takes a username and password. The input is escaped to prevent SQLi.
