@@ -2,6 +2,7 @@
 ## Here you can find anything related to the SQL Injection bug
 
 ### Teaching
+[SQLi_GBK_Vunlerability](https://github.com/MolCoteH/SQLi_PayLoads/blob/SQLi/SQLi_GBK_Vunlerability.md)
 
 
 ### payloads:
