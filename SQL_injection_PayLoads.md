@@ -4,6 +4,11 @@
 ##### Note: We can use the following code to make it true
 
     ("or", "and", "true", "false", "union", "like", "=", ">", "<", ";", "--", "/*", "*/")
+    AND   -> && -> %26%26
+    OR    -> || -> %7C%7C
+    =     -> LIKE,REGEXP,RLIKE, not < and not >
+    > X   -> not between 0 and X
+    WHERE -> HAVING --> LIMIT X,1 -> group_concat(CASE(table_schema)When(database())Then(table_name)END) -> group_concat(if(table_schema=database(),table_name,null))
 
     
 ..............................................................................
