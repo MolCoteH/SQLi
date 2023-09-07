@@ -4,6 +4,7 @@
 ##### Note: We can use the following code to make it true
 
     ("or", "and", "true", "false", "union", "like", "=", ">", "<", ";", "--", "/*", "*/")
+    
     AND   -> && -> %26%26
     OR    -> || -> %7C%7C
     =     -> LIKE,REGEXP,RLIKE, not < and not >
